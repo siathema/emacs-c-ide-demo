@@ -41,7 +41,7 @@
     ("eea01f540a0f3bc7c755410ea146943688c4e29bea74a29568635670ab22f9bc" default)))
  '(package-selected-packages
    (quote
-    (monokai-alt-theme zygospore helm-gtags helm yasnippet ws-butler volatile-highlights use-package undo-tree iedit dtrt-indent counsel-projectile company clean-aindent-mode anzu))))
+    (glsl-mode csharp-mode monokai-alt-theme zygospore helm-gtags helm yasnippet ws-butler volatile-highlights use-package undo-tree iedit dtrt-indent counsel-projectile company clean-aindent-mode anzu))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -60,6 +60,12 @@
 ;; CMake-mode
 (setq load-path (cons (expand-file-name "/dir/with/cmake-mode") load-path))
 (require 'cmake-mode)
+
+;; C/C++ tabing behavior
+(setq c-default-style "linux"
+      c-basic-offset 4)
+;;(setq c-default-style "linux"
+;;      c-basic-offset 4)
 
 ; stolen from Casey Muratori
 ; Bright-red TODOs
